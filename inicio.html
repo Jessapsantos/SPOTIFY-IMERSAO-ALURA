@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imerssão Spotify</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/main-content.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    
+    <!-- Ícones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>  
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+
+            <!-- PLAYLIST -->
+            <div class="playlist">
+                <h2 class="titulo-playlist">Artistas populares</h2>
+
+                <!-- ARTISTAS -->
+                <div class="offer__scroll-container">
+                    <div class="offer__list">
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/anitta.jpg" alt="Anitta">
+                                    <p class="artist__name">Anitta</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/pedrosampaio.jpg" alt="Pedro">
+                                    <p class="artist__name">Pedro Sampaio</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/ferrugem.jpg" alt="Ferrugem">
+                                    <p class="artist__name">Ferrugem</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/gustavolima.jpeg" alt="Gustavo">
+                                    <p class="artist__name">Gustavo Lima</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/filiperet.jpeg" alt="Filipe">
+                                    <p class="artist__name">Filipe Ret</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="artist">
+                            <a href="">
+                                <div class="artist1">
+                                    <img src="./assets/Artistas/Ludmilla.jpg" alt="Ludmilla">
+                                    <p class="artist__name">Ludmilla</p>
+                                    <p class="artist__role">Artista</p>
+                                    <div class="play-button">
+                                        <div class="play-icon"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ÁLBUNS -->
+                <div class="albums">
+                    <h2 class="titulo-album">Álbuns que todo mundo gosta</h2>
+                    <div class="album__scroll-container">
+                        <div class="album__list">
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/matue.333.jpeg" alt="Álbum 1">
+                                        <p class="album__name">333</p>
+                                        <p class="album__artist">Matuê</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/Brat – Charli XCX.png" alt="Álbum 2">
+                                        <p class="album__name">Brat</p>
+                                        <p class="album__artist">Charli XCX</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/Cowboy Carter – Beyoncé.jpg" alt="Álbum 3">
+                                        <p class="album__name">Cowboy Carter</p>
+                                        <p class="album__artist">Beyoncé</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/Hit Me Hard and Soft – Billie Eilish.jpg" alt="Álbum 4">
+                                        <p class="album__name">Hit Me Hard and Soft</p>
+                                        <p class="album__artist">Billie Eilish</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/Eternal Sunshine – Ariana Grande.jpg" alt="Álbum 5">
+                                        <p class="album__name">Eternal Sunshine</p>
+                                        <p class="album__artist">Ariana Grande</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="album">
+                                <a href="">
+                                    <div class="album1">
+                                        <img src="./assets/Albuns/New Blue Sun – André 3000.jpg" alt="Álbum 6">
+                                        <p class="album__name">New Blue Sun</p>
+                                        <p class="album__artist">André 3000</p>
+                                        <div class="play-button">
+                                            <div class="play-icon"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="podcasts">
+                  <h2>Podcast</h2>
+                  <div class="podcast__list">
+
+                    <div class="podcast">
+                        <a href="">
+                          <div class="podcast1">
+                            <img src="./assets/Podcast/podpah.jpg" alt="Card 1">
+                            <p class="podcast__name">PodPah</p>
+                            <p class="podcast__apresentadores">Igão e Mitico</p>
+                            <div class="play-button">
+                              <div class="play-icon"></div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+              
+                      <div class="podcast">
+                          <a href="">
+                              <div class="podcast1">
+                                  <img src="./assets/Podcast/cafedamanha.jpg" alt="Card 2">
+                                  <p class="podcast__name">Café da manhã</p>
+                                  <p class="podcast__apresentadores">Magê Flores</p>
+                                  <div class="play-button">
+                                    <div class="play-icon"></div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+
+                      <div class="podcast">
+                        <a href="">
+                            <div class="podcast1">
+                                <img src="./assets/Podcast/mano-a-mano.jpg" alt="Card 3">
+                                <p class="podcast__name">Mano a Mano</p>
+                                <p class="podcast__apresentadores">Mano Brown</p>
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="podcast">
+                        <a href="">
+                            <div class="podcast1">
+                                <img src="./assets/Podcast/podelas.jpeg" alt="Card 4">
+                                <p class="podcast__name">PodElas</p>
+                                <p class="podcast__apresentadores">Tata Estaniecki</p>
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="podcast">
+                        <a href="">
+                            <div class="podcast1">
+                                <img src="./assets/Podcast/psicologia-na-pratica.jpg" alt="Card 5">
+                                <p class="podcast__name">Psicologia na pratica</p>
+                                <p class="podcast__apresentadores">Alana Anijar</p>
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="podcast">
+                        <a href="">
+                            <div class="podcast1">
+                                <img src="./assets/Podcast/inteligencia-ltda.jpg" alt="Card 6">
+                                <p class="podcast__name">Inteligencia LTDA</p>
+                                <p class="podcast__apresentadores">Rogério Vilela</p>
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      
+                  </div>
+              </div>              
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+            <p class="disclaimer-premium__subtitle">
+                Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                anúncios. Não precisa de cartão de crédito.
+            </p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
+</body>
+
+</html>

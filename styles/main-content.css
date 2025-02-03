@@ -1,0 +1,457 @@
+:root {
+  --bg-icon: #fff; 
+  --bg-arrow-color: #333; 
+  --bg-header: #121212;
+  --bg-search: #242424;
+  --bg-button: #fff;
+  --bg-button-hover: #fff;
+  --text-color: #fff;
+  --text-secondary: #a7a7a7;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 308px; 
+  right: 0;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+/* HEADER NAVIGATION */
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 10px;
+  background-color: var(--bg-header);
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+  margin-right: 1.25rem;
+}
+
+/* ARROWS */
+.arrow-left,
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--bg-arrow-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* SEARCH BAR */
+/* Barra de pesquisa */
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 364px;
+  height: 48px;
+  margin-left: 8px;
+  background-color: var(--bg-search);
+  border-radius: 500px;
+  border: 1px solid transparent;
+  transition: border 0.3s ease; 
+}
+
+/* Ícone da barra de pesquisa */
+.header__search img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+/* Estilo do input */
+.header__search input {
+  background: transparent;
+  border: none;
+  padding: 0px 100px 0 15px;
+  color: var(--text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: none;
+  transition: border 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse (hover) */
+.header__search:hover {
+  border: 1px solid white; 
+}
+
+
+/* LOGIN AND SUBSCRIBE BUTTONS */
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__login .subscribe {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 32px;
+  white-space: nowrap; 
+  transition: transform 0.3s ease;
+}
+
+.header__login .subscribe:hover {
+  transform: scale(1.1);
+  color: #fff; 
+}
+
+.header__login .login {
+  width: 100px;
+  height: 48px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--bg-button);
+  border-radius: 40px;
+  transition: background-color 0.3s;
+  transition: transform 0.3s ease; 
+}
+
+/* Hover Effects */
+.header__login .login:hover {
+  background-color: var(--bg-button-hover);
+  transform: scale(1.05); 
+}
+
+.content {
+  margin-top: 48px; 
+  padding: 16px;
+  overflow-y: auto;
+  height: calc(100vh - 48px); 
+}
+
+/* PLAYLIST */
+
+.playlist {
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+  margin: 8px; 
+  margin-right: 5px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 76px; 
+  top: 81px; 
+  left: 308px; 
+  right: 5px; 
+  overflow-y: auto; 
+  overflow-x: auto; 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-grow: 1; 
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Ajuste no comportamento da rolagem para a horizontal */
+.playlist::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+.playlist::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 10px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+/* Titulo - Artistas populares */
+.playlist h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.playlist h2:hover {
+  text-decoration: underline;
+}
+
+/*ARTISTAS */
+
+.artist {
+  position: relative; 
+  display: inline-block;
+  margin: 10px; 
+  transition: all 0.3s ease; 
+}
+
+.artist1 {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  width: 200px;  
+  height: 260px; 
+  text-align: left; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+}
+
+.artist1 img {
+  width: 200px;  
+  height: 200px; 
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; 
+  z-index: 2; 
+}
+
+/* Nome e título do artista */
+.artist__name {
+  color: #fff; 
+  margin-top: 10px;
+  font-size: 16px;
+  z-index: 3; 
+}
+
+.artist__role {
+  color: #a7a7a7; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  z-index: 3; 
+}
+
+
+
+/* Efeito de fundo quadrado com gradiente atrás da imagem */
+.artist1:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+  border-radius: 10px;
+  z-index: 1; 
+}
+
+/* ALBUNS */
+
+.titulo-album {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color: white;
+}
+
+
+.titulo-album:hover {
+  text-decoration: underline;
+}
+
+.album__scroll-container {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.album {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.album1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 260px;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Capa do álbum */
+.album1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* Nome do álbum */
+.album__name {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 16px;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+/* Nome do artista */
+.album__artist {
+  color: #a7a7a7;
+  margin-top: 5px;
+  font-size: 14px;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+/* Efeito de hover nos cards de álbuns */
+.album1:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 1));
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* PODCAST */
+/* Título da seção */
+.podcasts h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.podcasts h2:hover {
+  text-decoration: underline;
+}
+
+/* Estilo dos cards */
+.podcast {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Estrutura de cada card */
+.podcast1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 260px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Imagem do card */
+.podcast1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* Nome do card */
+.podcast__name {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 16px;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+/* Descrição do card */
+.podcast__apresentadores {
+  color: #a7a7a7;
+  margin-top: 5px;
+  font-size: 14px;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+/* Efeito de hover nos cards */
+
+
+/* Efeito de hover para os cards de sobreposição */
+.podcast1:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7));
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+/* Botão de play */
+.artist1 .play-button,
+.album1 .play-button,
+.podcast1 .play-button {
+  position: absolute;
+  bottom: 65px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1DB954; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.artist1 .play-icon,
+.album1 .play-icon,
+.podcast1 .play-icon {
+  width: 0;
+  height: 0;
+  border-left: 16px solid black; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 3px; 
+}
+
+.artist1:hover .play-button,
+.album1:hover .play-button,
+.podcast1:hover .play-button {
+  opacity: 1;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); 
+}
