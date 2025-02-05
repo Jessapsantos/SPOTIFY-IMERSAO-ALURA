@@ -16,7 +16,7 @@ body {
     border-radius: 10px;
     width: 600px;
     text-align: center;
-    position: relative; /* Adiciona posicionamento relativo */
+    position: relative; 
 }
 
 .container h2 {
@@ -29,16 +29,16 @@ body {
 .logo {
     width: 50px;
     margin-bottom: 8px;
-    position: absolute; /* Faz o logo sair da sequência normal */
+    position: absolute; 
     top: 30px;
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta para que o logo fique no centro exato */
+    left: 50%; 
+    transform: translateX(-50%); 
 }
     
 
 .btn-google, .btn-facebook, .btn-apple {     
-    width: 370px;  /* Define a largura */
-    height: 50px;  /* Define a altura */
+    width: 370px;  
+    height: 50px;  
     margin: 10px auto; 
     border-radius: 50px;
     cursor: pointer;
@@ -46,8 +46,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    font-size: 16px; /* Ajuste o tamanho do texto */
-    font-weight: bold; /* Deixa o texto mais destacado */
+    font-size: 16px; 
+    font-weight: bold; 
     background-color: transparent;
     border: 1px solid #a7a7a7;
     color: #FFFFFFE6;
@@ -63,19 +63,19 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    left: 30px; /* Mantém o ícone fixo na esquerda */
+    left: 30px; 
 }
 
 .divider {
     width: 70%;
-    height: 1px;  /* Espessura da linha */
-    background-color: #a7a7a7;  /* Cor da linha */
-    margin: 50px auto;  /* Centraliza horizontalmente */
-    opacity: 0.1;  /* Deixa um pouco transparente */
+    height: 1px;  
+    background-color: #a7a7a7;  
+    margin: 50px auto;  
+    opacity: 0.1;  
 }
 
 input {
-    width: 100%; /* Ocupa toda a largura do container */
+    width: 100%; 
     max-width: 370px;
     height: 50px;
     margin: 10px auto;
@@ -83,8 +83,8 @@ input {
     background-color: transparent;
     border: 1px solid #a7a7a7;
     color: #ffffff;
-    padding: 10px; /* Adiciona um espaçamento interno */
-    box-sizing: border-box; /* Evita que a borda aumente o tamanho */
+    padding: 10px; 
+    box-sizing: border-box; 
 }
 
 input:hover {
@@ -92,8 +92,8 @@ input:hover {
 }
 
 input:focus {
-    border: 3px solid #1DB954; /* Muda a borda para um verde mais forte quando o campo é focado */
-    outline: none; /* Remove o contorno padrão */
+    border: 3px solid #1DB954; 
+    outline: none; 
 }
 
 .email-conteiner, .password-container {
@@ -101,7 +101,7 @@ input:focus {
     width: 100%;
     max-width: 370px;
     margin: 10px auto;
-    text-align: left; /* Mantém o rótulo alinhado à esquerda */
+    text-align: left; 
     color: #FFFFFFE6;
     font-size: 14px;
     font-weight: bold;
@@ -131,7 +131,7 @@ input:focus {
 
 .link-esqueci-senha {
     position: relative;
-    top: 30px; /* Move o link para baixo sem aumentar o container */
+    top: 30px; 
     color: #fff;
     text-decoration: underline;
     display: block;
@@ -146,24 +146,24 @@ input:focus {
 
 .link-inscreva-se {
     position: relative;
-    top: 70px; /* Move o link para baixo sem aumentar o container */
+    top: 70px; 
     color: #a7a7a7;
     display: block;
     margin: 0 auto;
-    text-decoration: none; /* Remove o sublinhado de todo o link */
+    text-decoration: none; 
 }
 
 .link-inscreva-se span {
-    text-decoration: none; /* Remove o sublinhado do 'Não tem uma conta?' */
+    text-decoration: none; 
 }
 
 .link-inscreva-se strong {
     color: #fff;
-    text-decoration: underline; /* Adiciona o sublinhado ao 'Inscrever-se no Spotify' */
+    text-decoration: underline; 
 }
 
 .link-inscreva-se strong:hover {
-    color: #1DB954; /* Muda a cor ao passar o mouse */
+    color: #1DB954; 
 }
 
 
