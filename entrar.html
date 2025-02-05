@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="script.js">
+
 </head>
 <body>
-    
+    <div class="container">
+        
+        <img src="./assets/icons/favicon.png" alt="" class="logo">
+        <h2>Entre no Spotify</h2>
+
+        <button class="btn-google">
+            <img src="/assets/icons/google-icone.png" alt="Google" class="icon">Continuar com Google
+        </button>
+        <button class="btn-facebook">
+            <img src="/assets/icons/facebook-icone.png" alt="facebook"  class="icon">Continuar com Facebook
+        </button>
+        <button class="btn-apple">
+            <img src="/assets/icons/apple-icone.png" alt="apple" class="icon">Continuar com Apple
+        </button>
+
+        <div class="divider"></div> 
+
+        <div class="email-conteiner">E-mail ou nome de usuário
+            <input type="text" id="email" placeholder="E-mail ou nome de usuário">
+        </div>
+        
+        <div class="password-container">Senha
+            <input type="password" id="password" placeholder="Senha">
+        </div>        
+                
+        <button class="loginSpotify" style="background:#1DB954; color:#000;">Entrar</button>
+        <a href="#" class="link-esqueci-senha">Esqueceu sua senha?</a>
+        <a href="#" class="link-inscreva-se"> 
+            <span>Não tem uma conta?</span> <strong>Inscrever-se no Spotify</strong>
+        </a>
+    </div>
+
 </body>
+
 </html>
+
+

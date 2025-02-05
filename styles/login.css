@@ -1,0 +1,169 @@
+
+body {
+    font-family: var(--fallback-fonts, sans-serif);
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background: #121212;
+    padding: 110px 50px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    position: relative; /* Adiciona posicionamento relativo */
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 8px;
+    position: absolute; /* Faz o logo sair da sequência normal */
+    top: 30px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que o logo fique no centro exato */
+}
+    
+
+.btn-google, .btn-facebook, .btn-apple {     
+    width: 370px;  /* Define a largura */
+    height: 50px;  /* Define a altura */
+    margin: 10px auto; 
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 16px; /* Ajuste o tamanho do texto */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #FFFFFFE6;
+}
+
+.btn-google:hover, .btn-facebook:hover, .btn-apple:hover {
+    border: 1px solid white; 
+}
+
+.btn-google .icon,
+.btn-facebook .icon,
+.btn-apple .icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 30px; /* Mantém o ícone fixo na esquerda */
+}
+
+.divider {
+    width: 70%;
+    height: 1px;  /* Espessura da linha */
+    background-color: #a7a7a7;  /* Cor da linha */
+    margin: 50px auto;  /* Centraliza horizontalmente */
+    opacity: 0.1;  /* Deixa um pouco transparente */
+}
+
+input {
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 370px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #ffffff;
+    padding: 10px; /* Adiciona um espaçamento interno */
+    box-sizing: border-box; /* Evita que a borda aumente o tamanho */
+}
+
+input:hover {
+    border: 1px solid white;
+}
+
+input:focus {
+    border: 3px solid #1DB954; /* Muda a borda para um verde mais forte quando o campo é focado */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.email-conteiner, .password-container {
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    margin: 10px auto;
+    text-align: left; /* Mantém o rótulo alinhado à esquerda */
+    color: #FFFFFFE6;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.loginSpotify {
+    width: 100%;
+    width: 370px;  
+    height: 50px;  
+    margin: 10px auto; 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: transparent;
+}
+
+.loginSpotify:hover {
+    transform: scale(1.05); 
+}
+
+.link-esqueci-senha {
+    position: relative;
+    top: 30px; /* Move o link para baixo sem aumentar o container */
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.link-esqueci-senha:hover {
+    text-decoration: underline;
+    color: #1DB954;
+}
+
+.link-inscreva-se {
+    position: relative;
+    top: 70px; /* Move o link para baixo sem aumentar o container */
+    color: #a7a7a7;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none; /* Remove o sublinhado de todo o link */
+}
+
+.link-inscreva-se span {
+    text-decoration: none; /* Remove o sublinhado do 'Não tem uma conta?' */
+}
+
+.link-inscreva-se strong {
+    color: #fff;
+    text-decoration: underline; /* Adiciona o sublinhado ao 'Inscrever-se no Spotify' */
+}
+
+.link-inscreva-se strong:hover {
+    color: #1DB954; /* Muda a cor ao passar o mouse */
+}
+
+
