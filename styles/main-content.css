@@ -163,6 +163,7 @@
   flex-grow: 1; 
   flex-direction: column;
   gap: 16px;
+  text-decoration: none;
 }
 
 /* Ajuste no comportamento da rolagem para a horizontal */
@@ -245,7 +246,6 @@
 }
 
 
-
 /* Efeito de fundo quadrado com gradiente atrás da imagem */
 .artist1:hover::after {
   content: '';
@@ -257,6 +257,10 @@
   background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
   border-radius: 10px;
   z-index: 1; 
+}
+
+.artist.hidden {
+  display: none;
 }
 
 /* ALBUNS */
